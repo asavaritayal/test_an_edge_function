@@ -1,5 +1,4 @@
 export function onRequest(event) {
-  if (event.request.url.pathname === "/secret") {
     event.replaceResponse(async () => {
       async function fetchContentJSON() {
         const response = await fetch(
@@ -31,5 +30,4 @@ export function onRequest(event) {
 
       return response;
     });
-  }
 }
