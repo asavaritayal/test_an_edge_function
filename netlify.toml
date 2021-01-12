@@ -2,6 +2,6 @@
   command = "exit 0"
 
 [[redirects]]
-from = "/"
+from = "/*"
 status = 200
 edge_handler = "addContent"
